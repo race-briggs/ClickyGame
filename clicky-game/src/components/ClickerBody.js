@@ -11,14 +11,19 @@ class Body extends React.Component {
     score: 0
   }
 
+  shuffle = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
 
   clickImage = (clicked) => {
     if(clicked){
-      // gameOver()
+      alert('You Lose!')
     } else {
-      clicked = true;
-      const newScore = this.state.score + 1;
-      this.setState({score: newScore});
+      this.setState({images: this.shuffle(this.state.images)})
     }
   }
 
@@ -32,7 +37,7 @@ class Body extends React.Component {
     return (
     <div className="container">
       {
-        this.state.images.map(image => {
+        this.shuffle(this.state.images).map(image => {
           return (<Card 
             image={image.image}
             clickCard={this.clickImage}

@@ -1,14 +1,12 @@
 import React from "react";
-
-const style = {
-  width: "300px",
-  height: "300px"
-}
+import "./Card.css";
 
 function Card(props) {
   return (
-    <div className="card" style={style}>
-      <img src="../images/bolas.jpg" className="img-fluid" alt="Responsive"/>
+    <div className="card">
+      <span onClick={() => props.clickCard(props.clicked)}>
+       <img src={props.image} className="img-fluid" alt="Responsive" style={{width: "300px", height: "200px"}}/>
+      </span>
     </div>
   )
 }

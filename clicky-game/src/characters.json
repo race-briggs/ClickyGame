@@ -1,62 +1,62 @@
 [
   {
     "id": 1,
-    "image": "./images/ajani.jpg",
+    "image": "https://i.imgur.com/8XMWJcF.jpg",
     "clicked": false
   },
   {
     "id": 2,
-    "image": "./images/bolas.jpg",
+    "image": "https://i.imgur.com/xZxbwGp.jpg",
     "clicked": false
   },
   {
     "id": 3,
-    "image": "./images/chandra.jpg",
+    "image": "https://i.imgur.com/5WsKAXe.jpg",
     "clicked": false
   },
   {
     "id": 4,
-    "image": "./images/jace.jpg",
+    "image": "https://i.imgur.com/JAF9oQb.jpg",
     "clicked": false
   },
   {
     "id": 5,
-    "image": "./images/karn.jpg",
+    "image": "https://i.imgur.com/ZZ4RpeR.jpg",
     "clicked": false
   },
   {
     "id": 6,
-    "image": "./images/liliana.jpg",
+    "image": "https://i.imgur.com/zB0NBbs.jpg",
     "clicked": false
   },
   {
     "id": 7,
-    "image": "./images/nissa.jpg",
+    "image": "https://i.imgur.com/ryK2G8j.jpg",
     "clicked": false
   },
   {
     "id": 8,
-    "image": "./images/ral.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXscalQFzjWwuwr-cziVvUwc_5sPZQUfzYCZ2BpXmvzREfWrw_Pg&s",
     "clicked": false
   },
   {
     "id": 9,
-    "image": "./images/sarkhan.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl48NkfJ_eiOw_JuVUbPdqZzXAYNCYZJ2NcW1KK2DefBTxrj5j&s",
     "clicked": false
   },
   {
     "id": 10,
-    "image": "./images/teferi.jpg",
+    "image": "https://i.imgur.com/oL9h962.jpg",
     "clicked": false
   },
   {
     "id": 11,
-    "image": "./images/tez.jpg",
+    "image": "https://i.imgur.com/29yAfdA.jpg",
     "clicked": false
   },
   {
     "id": 12,
-    "image": "./images/viv.jpg",
+    "image": "https://i.imgur.com/W914jno.jpg",
     "clicked": false
   }
 ]
