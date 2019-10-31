@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "./images/ajani.jpg",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "image": "./images/bolas.jpg",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "image": "./images/chandra.jpg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "image": "./images/jace.jpg",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "image": "./images/karn.jpg",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "image": "./images/liliana.jpg",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "image": "./images/nissa.jpg",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "image": "./images/ral.jpg",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "image": "./images/sarkhan.jpg",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "image": "./images/teferi.jpg",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "image": "./images/tez.jpg",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "image": "./images/viv.jpg",
+    "clicked": false
+  }
+]

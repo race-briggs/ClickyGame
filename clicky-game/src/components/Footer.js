@@ -1,12 +1,21 @@
 import React from "react";
 
+const footer = {
+  position: "fixed",
+  left: "0",
+  bottom: "0",
+  width: "100%",
+  color: "white",
+  textAlign: "left",
+  height: "10%",
+  padding: "10px"
+}
+
 function Footer() {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">M:TG Clicker Game</a>
-      </div>
-    </nav>
+    <div className="footer bg-dark" style={footer}>
+      <h5>M:TG Clicker Game</h5>
+    </div>
   )
 }
 
