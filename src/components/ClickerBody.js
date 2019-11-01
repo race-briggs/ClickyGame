@@ -3,49 +3,45 @@ import Card from "./Card";
 import images from "../characters.json";
 import "./Body.css";
 
-console.log(images);
-
 class Body extends React.Component {
-
-
 
   state = {
     images,
     score: 0,
-    highScore: 0,
-    clicked: false
+    highScore: 0
   }
 
-  shuffle = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
+  shuffle = () => {
+    for (let i = this.state.images.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
+      [this.state.images[i], this.state.images[j]] = [this.state.images[j], this.state.images[i]];
     }
-    return array;
+    this.setState({images});
   }
 
-  clickImage = (clicked) => {
-    console.log(clicked);
-    if(clicked){
-      alert('You Lose!')
-      if(this.state.score > this.state.highScore){
-        this.setState({highScore: this.state.score});
+  clickImage = (id) => {
+    console.log(id);
+    const images = this.state.images.map(image => {
+      if(image.id === id && image.clicked === true){
+        if (this.state.score > this.state.highScore) {
+          this.setState({ highScore: this.state.score });
+        }
+        this.resetGame();
+      } else if (image.id === id && image.clicked === false){
+        var currentScore = this.state.score;
+        image.clicked = true;
+        this.setState({score: currentScore + 1});
       }
-      this.resetGame();
-    } else {
-      var currentScore = this.state.score;
-      this.setState({
-        clicked: true,
-        score: currentScore + 1,
-        images: this.shuffle(this.state.images)
-      });
-    }
+      return image;
+    })
+    this.setState({images});
   }
 
   resetGame = () => {
     this.setState({
       score: 0,
-      images: this.shuffle(this.state.images)
+      images: this.shuffle(this.state.images),
+      clicked: false
     })
   }
 
@@ -58,11 +54,12 @@ class Body extends React.Component {
         <h3 className="score">High Score: {this.state.highScore}</h3>
       </div>
       {
-        this.shuffle(this.state.images).map(image => {
+        this.state.images.map(image => {
           return (<Card 
             image={image.image}
             clickCard={this.clickImage}
-            clicked={this.state.clicked}
+            clicked={this.state.images.clicked}
+            shuffle={this.shuffle}
             id={image.id}
             key={image.id}
           />)
