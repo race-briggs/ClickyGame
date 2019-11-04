@@ -1,5 +1,7 @@
 ### Magic: The Gathering ClickyGame
 
+https://mtg-clicker-game.herokuapp.com/
+
 ### Overview
 
 Click on all 12 of the unique planeswalkers! If you click on one twice, you lose! The pictures will change position with every click, have fun!
